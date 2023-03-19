@@ -4,7 +4,7 @@
 
 I am a first year machine learning PhD student at [Georgia Institute of Technology](https://ml.gatech.edu/) and a researcher at [DuckAI](https://github.com/TheDuckAI), [EleutherAI](https://www.eleuther.ai/), and [CarperAI](https://carper.ai/). I am broadly interested in techniques that improve reasoning capabilities in language models (including but not limited to [RLHF](https://huggingface.co/blog/rlhf)). 
 
-Previously, I studied mathematics at the University of Chicago. 
+Previously, I studied mathematics at the [University of Chicago](https://www.uchicago.edu/). 
 
 
 ## Recent Work. 
