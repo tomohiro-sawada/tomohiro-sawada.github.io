@@ -11,7 +11,7 @@ Previously, I studied mathematics at the [University of Chicago](https://www.uch
 
 Here are some recent projects: 
 
-### [DuckAI Academic Benchmark (DAB)](https://github.com/TheDuckAI/DUCK-datasets) 
+### [DuckAI Advanced Academic Benchmark (DAAB)](https://github.com/TheDuckAI/DUCK-datasets) 
 
 
 ## Miscellany. 
