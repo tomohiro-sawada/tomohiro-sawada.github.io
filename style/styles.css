@@ -226,13 +226,23 @@ h2 {
   }
 
 
-/* .writing-page {
+.writing-page {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-} */
+}
 
-.writing-page br {
-    line-height: 5;
-  }
+.writing-blog-posts {
+    margin-top: 15px;
+}
+
+.writing-miscellany {
+    margin-top: 100px;
+}
+.writing-miscellany br{
+    line-height: 0.5;
+}
+
+
+  
