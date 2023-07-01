@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+} 
+
+body {
+  background-color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.35em;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
+  pointer-events: none;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* get rid of default styles */
+button,
+button:active {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  margin: 0;
+  font-size: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+a:link, 
+a:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover {
+  /* I needed a word for phthalo green before...  */
+  color: #055735; 
+  text-decoration: underline;
+}
+
+.current:link, 
+.current:visited,
+.current:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.page-container {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 100%;
+  max-width: 680px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 7px;
+}
+
+header { 
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+
+header > a:link,
+header > a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  margin: 5px 0px 5px 15px;
+}
+
+.page {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.bio {
+  max-width: 300px;
+}
+
+
+
+
+/* cv styles */
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  margin: 15px 0px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.cv-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.cv-subtext {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.35em;
+  display: flex;
+}
+
+.cv-item {
+  margin: 5px;
+}
+
+.cv-date {
+  margin: 5px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+/* styles for thumbnail grids */
+
+.writing-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    line-height: 1.35em; 
+    margin-bottom: 20px;
+  }
+
+
+/* #instagram-link {
+  margin-bottom: 10px;
+} */
+
+.additional-info {
+  font-size: 10px;
+  line-height: 1.35em; 
+}
+
+.background {
+  background: rgba(0, 0, 0, 1);
+  /* if these are the same as the thumbnail size, browser renders a border  */
+  position: absolute;
+  z-index: -1;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.self-portrait {
+  display: block;
+  margin: 5px 0px 0px 25px;
+  float: right;
+}
+
+.template-credits {
+    font-size: 8px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+/* .writing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+} */
+
+.writing-page br {
+    line-height: 5;
+  }
