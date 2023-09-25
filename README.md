@@ -9,7 +9,11 @@ enhancing the reasoning capabilities of language models,
 particularly in the realm of mathematical reasoning, 
 and exploring the potential of multimodal models.
 
+# Contact. 
 
+Please reach out to me (via [email](mailto:tsawada@gatech.edu) or [Twitter DM](https://twitter.com/tsawada_ml)) 
+if you would like to talk to me about something I do (language models, open-source ML research, etc.).</p>
+            
 # Links.
 
 - [Professional Website](https://tomohiro-sawada.github.io/)
