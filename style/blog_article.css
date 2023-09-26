@@ -1,6 +1,4 @@
 * {
-  margin: 0px;
-  padding: 0px;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -92,6 +90,7 @@ a:hover {
 
 .page-container {
   margin: 20px 40px;
+  padding: 0 20px;  /* Add this line to give padding on the left and right */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,9 +139,9 @@ nav > ul > li {
 .page {
   width: 100%;
   max-width: 680px;
-  margin-left: auto;    
-  margin-right: auto;   
-  padding: 0 20px;      
+  margin-left: auto;    /* Add this */
+  margin-right: auto;   /* Add this */
+  padding: 0 20px;      /* Add this to give some padding on the sides */
   display: flex;
   justify-content: space-around;
   flex-direction: column;
