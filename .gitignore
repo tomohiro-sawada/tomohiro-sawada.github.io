@@ -1,3 +1,7 @@
+prose
+tmp
+AGENTS.md
+
 .DS_Store
 trash/*
 *.log

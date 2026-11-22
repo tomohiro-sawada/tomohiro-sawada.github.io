@@ -35,14 +35,14 @@ def modify_html(input_html):
 
     # ABOUT link
     li1 = soup.new_tag("li")
-    li1_a = soup.new_tag("a", href="../../../index.html", **{"class": "current"})
+    li1_a = soup.new_tag("a", href="../../../index.html")
     li1_a.string = "ABOUT"
     li1.append(li1_a)
     ul.append(li1)
 
     # BLOG link
     li2 = soup.new_tag("li")
-    li2_a = soup.new_tag("a", href="../../index.html")
+    li2_a = soup.new_tag("a", href="../../index.html", **{"class": "current"})
     li2_a.string = "BLOG"
     li2.append(li2_a)
     ul.append(li2)

@@ -158,7 +158,42 @@ nav > ul > li {
 
 
 .bio {
-  max-width: 300px;
+  max-width: 380px;
+}
+
+/* research page: one entry per paper */
+
+.papers {
+  width: 100%;
+}
+
+.papers li {
+  margin-bottom: 38px;
+}
+
+.paper-title {
+  font-weight: 400;
+}
+
+.paper-meta {
+  font-size: 14px;
+  color: #555;
+}
+
+.paper-desc {
+  margin: 4px 0px;
+}
+
+/* one figure per paper, under the text; click opens the full-size image */
+.paper-fig {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 12px 0px 0px 0px;
+}
+
+.paper-fig-small {
+  width: 400px;
 }
 
 
@@ -402,6 +437,7 @@ p.noindent, p.indent {
   /* Center align the items on the page */
   .page {
     align-items: center;
+    padding: 0px;
   }
 
   /* Stack the about section and collection page content in reverse order and center them */
@@ -413,8 +449,8 @@ p.noindent, p.indent {
 
   /* Adjust the bio maximum width and margins */
   .bio {
-    max-width: 230px;
-    margin: 0px 0px 0px 10px;
+    max-width: 100%;
+    margin: 0px;
   }
 
   /* Adjust the self-portrait margins */

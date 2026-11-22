@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title> Tomohiro (Tom) Sawada </title>
+
+    <link rel='stylesheet' type='text/css' href='./style/styles.css'/>
+
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+  </head>
+  <body>
+    <div class='page-container'>
+      <div class='menu'>
+        <header> <a href='./index.html'>  TOM SAWADA </a> </header>
+
+        <nav>
+          <ul>
+            <li> <a href='./index.html'> ABOUT </a> </li>
+<!--             <li> <a href='./_files/cv.pdf'> CV </a> </li> -->
+            <li> <a href='./research.html' class='current'> RESEARCH </a> </li>
+<!--             <li> <a href='./blog/index.html'> BLOG </a> </li> -->
+            <li> <a href='./miscellany.html'> MISC. </a> </li>
+          </ul>
+        </nav>
+
+
+
+      </div>
+      <div class='page'>
+        <div class="writing-page">
+            <h3>Research.</h3>
+            <br>
+            <p>
+              Papers I have worked on, newest first. The full list is on
+              <a href="https://scholar.google.com/citations?user=t0dADxkAAAAJ&hl=en">Google Scholar</a>.
+            </p>
+            <br>
+            <ul class='papers'>
+              <li>
+                <div class='paper-title'>Maximizing Capacity Utilization of LoRA Adapters for Mitigating the Learning-Forgetting Trade-off</div>
+                <div class='paper-meta'>Tomohiro Sawada, Kartik Goyal</div>
+                <p class='paper-desc'>
+                  Developed an SVD-free R&eacute;nyi-2 entropy penalty for LoRA. In mixed-domain fine-tuning of
+                  Qwen2.5-0.5B at fixed adapter rank r = 896, it raised mean effective rank from 361 to 888 and
+                  reduced Wiki perplexity from 19.60 to 14.65 and training perplexity from 4.77 to 4.53.
+                </p>
+                <div class='paper-meta'>arXiv preprint, 2026 /
+                  <a href="https://arxiv.org/abs/2611.17191">paper</a> /
+                  <a href="https://github.com/tomohiro-sawada/lora-capacity-utilization">code</a>
+                </div>
+                <a href='./figs/lora.png'><img class='paper-fig' src='./figs/lora.png' alt="Four panels comparing fine-tuning methods on Qwen2.5-0.5B. The R&eacute;nyi-2 penalty reaches near-full effective rank, and lower perplexity on held-out Wikipedia, code and translation text than standard LoRA at similar training perplexity."></a>
+              </li>
+              <li>
+                <div class='paper-title'>Train It and Forget It: Merge Lists are Unnecessary for BPE Inference in Language Models</div>
+                <div class='paper-meta'>Tomohiro Sawada, Kartik Goyal</div>
+                <p class='paper-desc'>
+                  A pretrained LM tolerates a different tokenizer inference algorithm with no retraining:
+                  merge-list-free BPE encoders preserve QA and open-ended generation quality on Qwen2-7B, with
+                  modest drops on machine translation. Merge lists, which can leak information about training
+                  data, need not be shipped.
+                </p>
+                <div class='paper-meta'>EMNLP 2025 (Oral) /
+                  <a href="https://aclanthology.org/2025.emnlp-main.1775/">paper</a> /
+                  <a href="https://arxiv.org/abs/2508.06621">arXiv</a>
+                </div>
+                <a href='./figs/bpe.png'><img class='paper-fig' src='./figs/bpe.png' alt="Diagram of tokenizing the word quantize. The standard tokenizer applies the ordered merge list and outputs qu + an + tize. Merge-free tokenizers use only the vocabulary: left-to-right gives quanti + z + e, and maximal compression gives quant + ize."></a>
+              </li>
+              <li>
+                <div class='paper-title'>Cascaded Information Disclosure for Generalized Evaluation of Problem Solving Capabilities</div>
+                <div class='paper-meta'>Yunxiang Yan, Tomohiro Sawada, Kartik Goyal</div>
+                <p class='paper-desc'>
+                  Evaluation framework that reveals a question in stages, separating free-form reasoning from
+                  answer selection. It narrows the between-model gaps seen under standard QA, suggesting standard
+                  QA overstates model differences.
+                </p>
+                <div class='paper-meta'>IJCNLP-AACL 2025 /
+                  <a href="https://aclanthology.org/2025.ijcnlp-long.171/">paper</a> /
+                  <a href="https://arxiv.org/abs/2507.23776">arXiv</a>
+                </div>
+                <a href='./figs/cid.png'><img class='paper-fig' src='./figs/cid.png' alt="Example of Cascaded Information Disclosure on a multiple-choice physics question. The model first attempts an answer without seeing the options, then a projection stage maps that attempt to an option; this is compared with standard question answering and an LLM judge."></a>
+              </li>
+              <li>
+                <div class='paper-title'>ARB: Advanced Reasoning Benchmark for Large Language Models</div>
+                <div class='paper-meta'>Tomohiro Sawada, Daniel Paleka, Alexander Havrilla, Pranav Tadepalli, Paula Vidas, Alexander Kranias, John J. Nay, Kshitij Gupta, Aran Komatsuzaki</div>
+                <p class='paper-desc'>
+                  Benchmark of advanced math, science, and law problems; GPT-4 and Claude scored below 50% on the
+                  harder tasks.
+                </p>
+                <div class='paper-meta'>MATH-AI Workshop at NeurIPS 2023 /
+                  <a href="https://arxiv.org/abs/2307.13692">paper</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+  </body>
+
+</html>
